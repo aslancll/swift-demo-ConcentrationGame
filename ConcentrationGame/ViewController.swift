@@ -17,8 +17,9 @@ class ViewController: UIViewController {
     }
     var emojiOptions = ["🎃","👻","🎃","👻"]
     
-
     
+    @IBOutlet var cardButtons: [UIButton]!
+
     @IBOutlet weak var flipCountLabel: UILabel!
     
     @IBAction func touchCard1(_ sender: UIButton) {
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 0.3355934262, green: 0.1389290372, blue: 0.1151548498, alpha: 1)
         } else {
             button.setTitle(emoji, for: UIControlState.normal)
-            button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         }
     }
     
